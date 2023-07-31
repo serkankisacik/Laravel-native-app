@@ -1,5 +1,3 @@
-Aşağıda, verilen örneğe dayanarak `readme` dosyasının Türkçe ve İngilizce hallerini göstereceğim:
-
 ## Türkçe
 
 # NativePHP İle Başlanmış Proje
