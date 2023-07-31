@@ -1,52 +1,83 @@
-# Native-App Örnek Uygulama
+Aşağıda, verilen örneğe dayanarak `readme` dosyasının Türkçe ve İngilizce hallerini göstereceğim:
 
-Bu proje, Laravel NativePHP kullanılarak geliştirilecek bir örnek uygulamadır. Bu uygulama, basit bir not defteri uygulamasıdır ve kullanıcıların notlarını eklemelerine, düzenlemelerine ve silmelerine olanak sağlar.
+## Türkçe
+
+# NativePHP İle Başlanmış Proje
+
+Bu proje, NativePHP kullanılarak başlatılmış bir Laravel projesidir. Bu paket sayesinde mevcut bir Laravel uygulamasına kurulum yapabilir veya yeni bir Laravel projesi başlatabilirsiniz.
 
 ## Gereksinimler
 
-- PHP 7.4 veya daha üstü bir sürüm
-- MySQL veya başka bir veritabanı
-- Web sunucusu (Apache, Nginx vb.)
-- Composer paket yöneticisi
+- PHP 8.1
+- Laravel 10 veya daha üstü
+- NPM
+- Linux/MacOS
 
 ## Kurulum
 
-1. Projeyi klonlayın veya ZIP olarak indirin.
-2. Terminalde projenin kök dizinine gidin ve aşağıdaki komutu çalıştırarak gerekli bağımlılıkları yükleyin:
-   ```
-   composer install
-   ```
-3. `.env.example` dosyasını `.env` olarak kopyalayın ve veritabanı bağlantı bilgilerini ayarlayın.
-4. Veritabanını oluşturmak için aşağıdaki komutu çalıştırın:
-   ```
-   php artisan migrate
-   ```
-5. Uygulamayı başlatmak için aşağıdaki komutu çalıştırın:
-   ```
-   php artisan serve
-   ```
+NativePHP paketini eklemek için aşağıdaki komutu çalıştırın:
 
-## Kullanım
+```
+composer require nativephp/electron
+```
 
-1. Tarayıcınızda uygulamaya erişmek için aşağıdaki URL'yi ziyaret edin:
-   ```
-   http://localhost:8000
-   ```
-2. Ana sayfada, "Not Ekle" butonuna tıklayarak yeni bir not oluşturun.
-3. Not ekledikten sonra, "Notları Listele" sayfasına geri dönerek tüm notları görüntüleyin.
-4. Notları liste üzerinden düzenleyebilir veya silebilirsiniz.
+## Laravel Kurulumu
 
-## Katkıda Bulunma
+NativePHP, bir Laravel Paketidir. Mevcut bir Laravel uygulamasına yükleyebilir veya yeni bir proje başlatabilirsiniz.
 
-Eğer bu projeye katkıda bulunmak isterseniz, lütfen aşağıdaki adımları takip edin:
+## Kurulum Sihirbazını Çalıştırma
 
-1. Bu depoyu çatallayın (fork) ve yerel bir kopya oluşturun.
-2. Yeni özellikler veya düzeltmeler için bir dal (branch) oluşturun.
-3. Değişikliklerinizi yapın ve uygun şekilde test edin.
-4. Değişikliklerinizi ana depoya (upstream) göndermek için bir pull talebi (pull request) oluşturun.
+NativePHP kurulum sihirbazı, NativePHP servis sağlayıcısını yayınlama işlemini ve uygulamanızın bootstrapping işlemlerini yapar. Aynı zamanda NativePHP yapılandırma dosyasını da yayınlar.
 
-Proje geliştirme sürecinde yardımcı olmanızı ve katkılarınızı bekliyoruz.
+```
+php artisan native:install
+```
 
-## Lisans
+## Geliştirme Sunucusunu Başlatma
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylı bilgi için `LICENSE` dosyasını inceleyin.
+```
+php artisan native:serve
+```
+
+Ve bu kadar! Artık uygulamanızın yerel masaüstünde çalışan bir pencerede görüntülenmesini görebilirsiniz.
+
+## English
+
+# Project Started with NativePHP
+
+This project is a Laravel project that has been initiated with NativePHP. With this package, you can install it on an existing Laravel application or start a new one.
+
+## Requirements
+
+- PHP 8.1
+- Laravel 10 or higher
+- NPM
+- Linux/MacOS
+
+## Installation
+
+To add the NativePHP package, run the following command:
+
+```
+composer require nativephp/electron
+```
+
+## Install Laravel
+
+NativePHP is a Laravel Package. You can install it on an existing Laravel application, or start a new one.
+
+## Run the Installer
+
+The NativePHP installer takes care of publishing the NativePHP service provider, which takes care of bootstrapping your native application. It also publishes the NativePHP configuration file.
+
+```
+php artisan native:install
+```
+
+## Start the Development Server
+
+```
+php artisan native:serve
+```
+
+And that's it! You should now see your application running in a native desktop window.
